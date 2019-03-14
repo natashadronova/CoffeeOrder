@@ -9,16 +9,18 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Laila|Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Laila|Montserrat" rel="stylesheet">
 
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
   <div class="container">
     <header class="navigation-wrapper">
-
-      <img class="logo" src="img/logo.png" alt="Coffee Cup">
+      <div class="logo">
+        <i class="fas fa-mug-hot fa-3x"></i>
+      </div>
+      <!-- <img class="logo" src="img/logo.png" alt="Coffee Cup"> -->
       <nav>
         <ul class="navigation-items">
           <li>
@@ -28,6 +30,67 @@
       </nav>
 
     </header>
+  </div>
+  <div class="container">
+    <div class="submission-form">
+  
+      <div class="submission">
+        <form action="#" method="post">
+          <div class="input">
+           
+            <input type="text" id="name" name="user_name" placeholder="Name">
+          </div>
+          <div class="input"> 
+           
+            <input type="text" id="coffee" placeholder="Coffee Order" name="coffee">
+          </div>
+          <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+              <label class="onoffswitch-label" for="myonoffswitch">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+              </label>
+          </div>
+          <input type="submit" class = "submit-button" value="Submit" id="input-submit">
+        </form>
+      </div>
+      <div class="letter-img">
+          <img src="img/envelope.png" class="coffee-cup" alt="Coffee Order">
+        </div>
+    </div>
+  </div>
+  <div class="results container">
+    <div class="table-header">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Order</th>
+          <th></th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="table-content">
+    <table>
+      <tbody>
+        <tr>
+          <td>Nat</td>
+          <td>Almond Latte</td>
+          <td>
+            <a href="#"><i class="fas fa-times"></i></a>
+          </td>
+        </tr>
+        <tr>
+            <td>Nat</td>
+            <td>Almond Latte</td>
+            <td>
+                <a href="#"><i class="fas fa-times"></i></a>
+              </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
   </div>
 </body>
 

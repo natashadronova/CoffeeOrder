@@ -1,6 +1,7 @@
 
 
-/* navigation */
+/* NAVIGATION */
+/*  */
 
 .navigation-wrapper {
   display: grid;
@@ -11,18 +12,21 @@
 }
 
 .logo {
-  /* border: 1px solid black; */
   width: 100px;
-  /* margin-top: 2em; */
   grid-column-start: 1;
   grid-column-end:2;
   grid-row-start:1;
   grid-row-end:2;
-
+  font-size: 20px;
+  text-align: center;
+  /* border: 1px solid black; */
 }
 
-img {
+.logo i {
   margin: auto;
+  color: #0894A1;
+ margin-left: 1em;
+  
 }
 
 .navigation-items {
@@ -30,26 +34,23 @@ img {
   grid-column-end:3;
   grid-row-start:1;
   grid-row-end:2;
-  border: 1px solid black;
+  
   vertical-align: middle;
   height: 100%;  
   list-style-type: none;
 }
 
-
-
-
 /* links */
 a {
   text-decoration: none !important;
-  color: #222F3F !important;
+  color: #112F41 !important;
   text-transform: lowercase;
-  background-color: #F06060;
+  background-color: #ED553B;
   padding: auto;
 }
 
 a:hover {
-  color:#F06060 !important;
+  color:#ED553B !important;
 }
 
 li {
@@ -67,4 +68,176 @@ li a {
   line-height: 100px;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
+}
+
+/* SUBMISSION FORM */
+.submission-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 300px;
+ 
+  padding: 2em;
+}
+
+.letter-img {
+  grid-column-start: 2;
+  grid-column-end:3;
+  grid-row-start:1;
+  grid-row-end:2;
+  text-align: center;
+}
+
+.coffee-cup {
+  width: 60%;
+  height: 90%;
+  margin: auto;
+  float: center;
+}
+
+/* Form itself */
+.submission {
+  grid-column-start: 1;
+  grid-column-end:2;
+  grid-row-start:1;
+  grid-row-end:2;
+  
+  padding: 2em;
+}
+
+.submit-button {
+  padding: 5px;
+  background-color: #ED553B;
+  color: #F2F2F2;
+}
+
+form {
+  vertical-align: middle;
+  text-align: center;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: 2em;
+  border: none;
+  box-shadow: 0 1px 0px #116973;
+  border-radius: 4px;
+ padding: 0px 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+
+.input  {
+  margin-top: 2em;
+}
+
+/* on-off switch */
+.onoffswitch {
+  position: relative; 
+  width: 90px;
+margin-top: 2em;
+align: center;
+margin-left: 40%;
+
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+  display: none;
+  
+}
+.onoffswitch-label {
+  display: block; overflow: hidden; cursor: pointer;
+  border: 2px solid #999999; border-radius: 20px;
+  
+}
+.onoffswitch-inner {
+  display: block; width: 200%; margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+  font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+  box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+  content: "ON";
+  padding-left: 10px;
+  background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+  content: "OFF";
+  padding-right: 10px;
+  background-color: #EEEEEE; color: #999999;
+  text-align: right;
+}
+.onoffswitch-switch {
+  display: block; width: 18px; margin: 6px;
+  background: #FFFFFF;
+  position: absolute; top: 0; bottom: 0;
+  right: 56px;
+  border: 2px solid #999999; border-radius: 20px;
+  transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px; 
+}
+
+/* table designs */
+.container {
+  /* border: 1px solid black; */
+  width: 100%;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  margin: 0;
+}
+
+.table-header {
+  background-color: #0894A1;
+  width: 100%;
+  margin: 0;
+  color: #F2F2F2;
+  text-align: left;
+  padding: 20px 15px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.table-content {
+padding: 15px;
+text-align: left;
+vertical-align: middle;
+font-family: 'Montserrat', sans-serif;
+color: #112F41
+
+}
+
+table tr th:nth-child(3) {
+  width: 10%;
+
+}
+
+table tr td:nth-child(3) {
+  width: 10%;
+
+}
+
+tr {
+  border-bottom: solid 1px #0894A1;
+  
+}
+
+td {
+  border-bottom: solid 1px #0894A1;
+  padding: 10px;
 }
