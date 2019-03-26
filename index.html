@@ -35,7 +35,7 @@
     <div class="submission-form">
   
       <div class="submission">
-        <form action="#" method="post">
+        <form action="submit" method="post" id='coffee-form'>
           <div class="input">
            
             <input type="text" id="name" name="user_name" placeholder="Name">
@@ -64,6 +64,7 @@
     <table>
       <thead>
         <tr>
+          <th></th>
           <th>Name</th>
           <th>Order</th>
           <th></th>
@@ -72,9 +73,10 @@
     </table>
   </div>
   <div class="table-content">
-    <table>
+    <table id="orderList">
       <tbody>
-        <tr>
+        <!-- <tr>
+          <td>1</td>
           <td>Nat</td>
           <td>Almond Latte</td>
           <td>
@@ -82,16 +84,17 @@
           </td>
         </tr>
         <tr>
+          <td>2</td>
             <td>Nat</td>
             <td>Almond Latte</td>
             <td>
                 <a href="#"><i class="fas fa-times"></i></a>
               </td>
-          </tr>
+          </tr> -->
       </tbody>
     </table>
   </div>
   </div>
 </body>
-
+<script src="app.js"></script>
 </html>
